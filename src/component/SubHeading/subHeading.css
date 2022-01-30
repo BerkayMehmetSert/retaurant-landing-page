@@ -1,0 +1,37 @@
+/*  === Subheading Component === */
+.subheading {
+  margin-bottom: 1rem;
+}
+.subheading-text {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  line-height: 29.9px;
+  font-size: 23px;
+}
+.subheading-img {
+  width: 45px;
+}
+@media screen and (min-width: 2000px) {
+  .subheading-text {
+    font-size: 37px;
+    line-height: 67px;
+  }
+
+  .subheading-img {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .subheading-text {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .subheading-text {
+    font-size: 19px;
+  }
+}

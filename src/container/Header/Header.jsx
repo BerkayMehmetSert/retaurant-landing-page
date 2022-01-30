@@ -1,0 +1,27 @@
+import React from 'react';
+import './header.css';
+import { images } from '../../constants';
+import { SubHeading } from '../../component';
+const Header = () => {
+  return (
+    <div className='app__header' id='header'>
+      <div className='app__header_info'>
+        <SubHeading title='Chase The New Flavour' />
+        <h1 className='app__header-h1'>The Key To Fine Dining</h1>
+        <p className='app__header-p'>
+          Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+          volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+          aliquam amet tellus
+        </p>
+        <button type='button' className='app__header-custom-btn'>
+          Explore Menu
+        </button>
+      </div>
+      <div className='app__header-image'>
+        <img src={images.welcome} alt='heder-image' />
+      </div>
+    </div>
+  );
+};
+
+export default Header;
